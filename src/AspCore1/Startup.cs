@@ -29,9 +29,8 @@ namespace AspCore1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddScoped<IBlogService, InMemoryBlogService>();
-            //TODO:
-            //services.AddScoped<IBlogService, WPBlogService>();
+            services.AddScoped<IBlogService, WPBlogService>();
+            //services.AddScoped<IBlogService, InMemoryBlogService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

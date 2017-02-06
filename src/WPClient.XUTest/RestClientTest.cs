@@ -12,9 +12,9 @@ namespace WPClient.XUTest
         public void GetBlogsAsString_x_y()
         {
             //arrange
-            //string baseUrl = "http://vps323909.ovh.net/sites/site2/index.php/wp-json/wp/v2";
             string baseUrl = "http://vps323909.ovh.net";
-            RestClient client = new RestClient(baseUrl);
+            string endpoint = "sites/site2/index.php/wp-json/wp/v2";
+            RestClient client = new RestClient(baseUrl, endpoint);
 
             //act
             string result = client.GetBlogsAsString();
@@ -28,7 +28,8 @@ namespace WPClient.XUTest
         {
             //arrange
             string baseUrl = "http://vps323909.ovh.net";
-            RestClient client = new RestClient(baseUrl);
+            string endpoint = "sites/site2/index.php/wp-json/wp/v2";
+            RestClient client = new RestClient(baseUrl, endpoint);
 
             //act
             IEnumerable<WPBlog> result = client.GetBlogs();

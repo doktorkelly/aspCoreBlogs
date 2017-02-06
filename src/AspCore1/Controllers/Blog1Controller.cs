@@ -17,7 +17,6 @@ namespace AspCore1.Controllers
         public Blog1Controller(IBlogService blogService = null)
         {
             this.BlogService = blogService;
-            //this.BlogService = blogService ?? new InMemoryBlogService();
         }
 
         // GET: /<controller>/

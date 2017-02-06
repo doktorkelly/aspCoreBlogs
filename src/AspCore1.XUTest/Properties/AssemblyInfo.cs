@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WPClientTest")]
+[assembly: AssemblyProduct("AspCore1.XUTest")]
 [assembly: AssemblyTrademark("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
@@ -16,4 +16,4 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a0a577cd-e0b6-4094-8f3c-7b850602194c")]
+[assembly: Guid("5bf43a1a-5f54-48af-8e27-02b0dcf04f7c")]

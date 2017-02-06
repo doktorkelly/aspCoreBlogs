@@ -13,9 +13,9 @@ namespace WPClient
         public HttpClient Client { get; }
         public string RestEP { get; }
 
-        public RestClient(string baseUrl, string mimeType = "application/json")
+        public RestClient(string baseUrl, string ep, string mimeType = "application/json")
         {
-            this.RestEP = "sites/site2/index.php/wp-json/wp/v2";
+            this.RestEP = ep;
             this.Client = new HttpClient();
             this.Client.BaseAddress = new Uri(baseUrl);
             this.Client.DefaultRequestHeaders.Accept.Clear();
